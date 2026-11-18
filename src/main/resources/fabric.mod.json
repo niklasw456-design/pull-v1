@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "crossclick",
+  "version": "${version}",
+  "name": "CrossClick",
+  "description": "Eine Taste auf Account 1 löst auf dem zweiten Minecraft-Client (Account 2) einen Rechtsklick aus.",
+  "authors": [],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "de.crossclick.CrossClickClient"
+    ],
+    "modmenu": [
+      "de.crossclick.compat.ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.17.3",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
